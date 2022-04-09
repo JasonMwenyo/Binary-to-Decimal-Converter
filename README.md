@@ -28,8 +28,7 @@ constraints:
 ## Developer Stories
 
 - [ ] Validation of user input should be done
--
-- <!-- ✅ -->
+<!-- ✅ -->
 
 ## Bonus features
 
