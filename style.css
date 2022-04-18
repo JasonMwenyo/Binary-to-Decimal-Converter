@@ -5,12 +5,40 @@
 }
 
 .flex-container {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  margin-top: 10%;
+  /* border: solid; */
+  border-radius: 20px;
+  margin: 10% auto;
   align-items: center;
-  border: solid;
-  
+  width: 20%;
+}
+
+
+.item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+}
+
+/* Added because the app heading is much larger than the 2 items below
+it */
+.itemLeader {
+  padding: 10px;
+}
+
+/* Remove input arrows/spinners from number input field */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 
