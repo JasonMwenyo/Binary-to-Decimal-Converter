@@ -2,18 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .flex-container {
   display: flex;
   flex-direction: column;
-  /* border: solid; */
   border-radius: 20px;
   margin: 10% auto;
   align-items: center;
   width: 20%;
 }
-
 
 .item {
   margin-left: auto;
@@ -41,4 +40,12 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+#binaryInput, #decimalOutput {
+  padding: 5px 25px;  
+}
+
+.invalid {
+  border: 2px solid red;
+  background-color: red;
+}
 

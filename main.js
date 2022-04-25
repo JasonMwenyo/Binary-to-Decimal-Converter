@@ -8,24 +8,26 @@ const pattern = {
 
 binaryInput.addEventListener("keyup", (e) => {
     validate(pattern.binary, binaryInput.value);
-})
+});
 
 
 
 // Validate the input then convert it to decimal
 const validate = (regex, bin) => {
     if (regex.test(bin) === true) {
+        valid();
         let decimal = parseInt(bin, 2);
         decimalOutput.value = decimal;
     } else {
-        console.log("That is not a binary number");
+        invalid();
     }
 }
 
+// Add invalid class to input area
+function invalid() {
+    binaryInput.classList.add("invalid");
+}
 
-// convert to binary
-
-
-
-
-
+function valid() {
+    binaryInput.classList.remove("invalid");
+}
