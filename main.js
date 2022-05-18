@@ -1,5 +1,6 @@
 let binaryInput = document.getElementById("binaryInput");
 let decimalOutput = document.getElementById("decimalOutput");
+let errorText = document.getElementById("error_text");
 
 const pattern = {
     binary: /^[0-1]{1,8}$/
@@ -26,8 +27,10 @@ const validate = (regex, bin) => {
 // Add invalid class to input area
 function invalid() {
     binaryInput.classList.add("invalid");
+    errorText.style.display = "";
 }
 
 function valid() {
     binaryInput.classList.remove("invalid");
+    errorText.style.display = "none";
 }
